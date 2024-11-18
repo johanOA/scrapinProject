@@ -5,7 +5,6 @@ from scraping_scripts.toJson import save_to_json
 def mercadoGetRources(page_source):
     soup = BeautifulSoup(page_source, 'html.parser')
 
-    # Supongamos que ya tienes el objeto `soup`
     products = soup.find_all('div', {'ui-search-result__wrapper'})
 
     # Lista para almacenar los productos como tuplas
